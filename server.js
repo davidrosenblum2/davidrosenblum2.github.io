@@ -12,6 +12,10 @@ app.route("/").get((req, res) => {
     res.end("index.html");
 });
 
+app.route("/fake*").get((req, res) => {
+    res.end("This link is fake.");
+});
+
 // heroku gives port
 const PORT = process.env.PORT || 8080;
 

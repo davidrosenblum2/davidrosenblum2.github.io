@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize');
+
+body{
+    font-family: electrolize;
+    color: white;
+    background-image: url("/lib/img/wall_art.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header{
+    margin-top: 100px;;
+}
+
+footer{
+    margin-top: 10%;
+}
+
+.carousel{
+    color: red;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+}
+
+.carousel img{
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+.follow-me-btn{
+    margin: 0px 6px 0px 6px;
+    min-width: 100px;
+}
+
+::selection{
+    background-color: black;
+    color: white;
+}
