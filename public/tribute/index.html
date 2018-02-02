@@ -6,45 +6,64 @@
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="wrapper" class="container-fluid">
+    <div id="wrapper" class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav-content" class="collapse navbar-collapse">
+                <ol class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/tribute">Tribute</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+                </ol>
+            </div>
+        </nav>
         <header>
-            <h1>Aragorn</h1>
-            King of Gondor & Arnor
+            <h1>Aragorn Tribute</h1>
         </header>
+            <br>
         <main class="container">
+            <div class="card card-body bg-light text-center">
+                Aragorn, King of Gondor & Arnor 
+                <div>Read more <a href="https://en.wikipedia.org/wiki/Aragorn" target="_blank">here</a>.</div>
+            </div>
+                <br>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3 card card-body bg-light">
                     <h3>The Fellowship of the Ring</h3>
                     <p>
                         The hobbits first meet Strider, the mysterious ranger of the north, in the Prancing Pony tavern in Bree.
                         Strider hides them from the Nazgul that are hunting them and escorts them to elven city of Rivendell.
                         Here Aragorn becomes one of the nine companions that are known as the fellowship of the ring.
                     </p>
+                    <div class="text-center">
+                        <img class="img" src="img/aragorn_ep1.jpg" width="200px" alt="Strider, the ranger of the north" title="Strider, the ranger of the north">
+                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 card card-body bg-light">
                     <h3>The Two Towers</h3>
                     <p>
                         During this film Aragorn is tracking Merry and Pippin as the Uruk-Hai are taking them to Isengard.
                         Aragorn its interrupted when he meets the Rohirim and beings the quest of repairing Rohan.
                         Aragorn helps lead the defense of Helms Deep from Isengard's invasion.
                     </p>
+                    <div class="text-center">
+                        <img class="img" src="img/aragorn_ep2.jpg" width="200px" alt="Aragorn hunting the hobbits" title="Aragorn hunting the hobbits">
+                    </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-1"></div>
+                <div class="col-md-3 card card-body bg-light">
                     <h3>Return of the King</h3>
-                    Aragorn convinces Rohan to aid Gondor as the siege of Minas Tirith commences.
-                    He travels the Path of the Dead and summons them for the war as he promises to hold their othes fulfilled.
-                    Minis Tirith is reclaimed and at the end Aragorn is crowned king.
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <img class="img" src="img/aragorn_ep1.jpg" width="250px" alt="Strider, the ranger of the north" title="Strider, the ranger of the north">
-                </div>
-                <div class="col-md-4">
-                    <img class="img" src="img/aragorn_ep2.jpg" width="250px" alt="Aragorn hunting the hobbits" title="Aragorn hunting the hobbits">
-                </div>    
-                <div class="col-md-4">
-                    <img class="img" src="img/aragorn_ep3.png" width="250px" alt="King Aragorn" title="King Aragorn">
+                    <p>
+                        Aragorn convinces Rohan to aid Gondor as the siege of Minas Tirith commences.
+                        He travels the Path of the Dead and summons them for the war as he promises to hold their othes fulfilled.
+                        Minis Tirith is reclaimed and at the end Aragorn is crowned king.
+                    </p>
+                    <div class="text-center">
+                        <img class="img" src="img/aragorn_ep3.png" width="200px" alt="King Aragorn" title="King Aragorn">
+                    </div>
                 </div>
             </div>
         </main>
