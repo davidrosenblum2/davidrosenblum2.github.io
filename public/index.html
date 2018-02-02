@@ -3,9 +3,31 @@
 <head>
     <title>David's Stuff</title>
     <link rel="stylesheet" href="/lib/css/bootstrap.min.css" type="text/css">
+    <style>
+        ::selection{
+            background-color: black;
+            color: white;
+        }
+
+        header{
+            margin-top: 75px;
+        }
+    </style>
 </head>
 <body>
     <div id="wrapper" class="container">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav-content" class="collapse navbar-collapse">
+                <ol class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/tribute">Tribute</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+                </ol>
+            </div>
+        </nav>
         <header class="text-center">
             <h1>David's Website</h1>
         </header>
@@ -13,7 +35,7 @@
         <main class="container">
             <div class="row">
                 <div class="col-md-3"></div>
-                <div class="col-md-6">
+                <div class="col-md-6 card card-body bg-light">
                     Welcome to my makeshift landing page.
                     Listed below are links to each project.
                 </div>
@@ -21,25 +43,24 @@
             </div>
                 <br>
             <div class="row">
-                <div class="col-md-3">
-
-                </div>
-                <div class="col-md-3">
-                    <h3>Portfolio Webpage</h3>
-                    <p>Check it out <a href="/portfolio">here</a>.</p>
-                    <p>(Still a work in progress)</p>
-                </div>
-                <div class="col-md-3">
+                <div class="col-md-5 card card-body bg-light">
                     <h3>Tribute Webpage</h3>
                     <p>Check it out <a href="/tribute">here</a>.</p>
                     <p>(Still a work in progress)</p>
                 </div>
-                <div class="col-md-3">
-
+                <div class="col-md-2"></div>
+                <div class="col-md-5 card card-body bg-light">
+                    <h3>Portfolio Webpage</h3>
+                    <p>Check it out <a href="/portfolio">here</a>.</p>
+                    <p>(Still a work in progress)</p>
                 </div>
             </div>
         </main>
-        <footer class="text-center">David Rosenblum | 2018</footer>
+            <br>
+        <footer class="text-center">
+            <hr>
+            David Rosenblum | 2018
+        </footer>
     </div>
     <script src="/lib/js/jquery-3.2.1.slim.min.js"></script>
     <script src="/lib/js/bootstrap.min.js"></script>
