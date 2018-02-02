@@ -2,8 +2,8 @@
 
 body{
     font-family: electrolize;
-    color: white;
-    background-image: url("/lib/img/wall_art.jpg");
+    /*color: white;
+    background-image: url("img/wall_art.jpg");*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,7 +11,7 @@ body{
 }
 
 header{
-    margin-top: 100px;;
+    margin-top: 75px;
 }
 
 footer{
@@ -29,8 +29,19 @@ footer{
 }
 
 .follow-me-btn{
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: black;
+    color: red;
     margin: 0px 6px 0px 6px;
     min-width: 100px;
+    transition: 0.5s;
+}
+
+.follow-me-btn:hover{
+    border-color: black;
+    color: black;
+    background-color: red;
 }
 
 ::selection{
