@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>DR Portfolio</title>
+    <title>David's Portfolio</title>
     <link href="/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div id="wrapper" class="container">
-        <header class="text-center">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="nav-content" class="collapse navbar-collapse">
+                <ol class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/tribute">Tribute</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+                </ol>
+            </div>
+        </nav>
+        <header class="text-center card card-body bg-light">
             <h1>David Rosenblum</h1>
             <h3>Programmer - Gamer - Jedi Knight</h3>
         </header>
-        <hr>
+            <br>
         <main>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3>Portfolio</h3>
-                    <div id="carousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel" data-slide-to="1"></li>
-                            <li data-target="#carousel" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
-                                <img src="img/javascript.jpg" width="500px" height="500px">
-                                <div class="carousel-caption">
-                                    <h3>three.js</h3>
-                                    <p>(This is a template)</p>
+                    <div>
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel" data-slide-to="1"></li>
+                                <li data-target="#carousel" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img src="img/proj_template.png" width="300px" height="250px">
+                                    <div class="carousel-caption">
+                                        <h3>Cool Project #1</h3>
+                                        <p>(This is a template)</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/dark_souls_3.jpg" width="500px" height="500px">
-                                <div class="carousel-caption">
-                                    <h3>Dark Souls III</h3>
-                                    <p>(This is a template)</p>
+                                <div class="carousel-item">
+                                    <img src="img/proj_template.png" width="300px" height="250px">
+                                    <div class="carousel-caption">
+                                        <h3>Cool Project #2</h3>
+                                        <p>(This is a template)</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img  src="img/swbf2.jpg" width="500px" height="500px">
-                                <div class="carousel-caption">
-                                    <h3>Star Wars: Battlefront II</h3>
-                                    <p>(This is a template)</p>
+                                <div class="carousel-item">
+                                    <img  src="img/proj_template.png" width="300px" height="250px">
+                                    <div class="carousel-caption">
+                                        <h3>Cool Project #3</h3>
+                                        <p>(This is a template)</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+                <br>
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3>Follow Me</h3>
