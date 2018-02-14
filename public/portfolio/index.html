@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>David's Portfolio</title>
-    <link href="/lib/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <title>DR Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  rel="stylesheet" type="text/css">
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div id="wrapper" class="container">
+    <div id="wrapper" class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-content">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div id="nav-content" class="collapse navbar-collapse">
                 <ol class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/tribute">Tribute</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="/portfolio">Portfolio</a></li>
+                    <li class="nav-item">
+                        <a href="#about-me" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    <li class="nav-item">
+                    </li>
+                        <a href="#follow-me" class="nav-link">Follow</a>
+                    </li>
                 </ol>
             </div>
         </nav>
-        <header class="text-center card card-body bg-light">
-            <h1>David Rosenblum</h1>
-            <h3>Programmer - Gamer - Jedi Knight</h3>
-        </header>
+        <main class="container">
+            <header class="card card-body bg-light">
+                <!--<h1 class="text-center">David Rosenblum</h1>-->
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h1 class="text-center">David Rosenblum</h1>
+                        <p>
+                            I really enjoy programming, watching movies, longboarding, and playing videogames.
+                            Some of my favorite game series are Dark Souls, BioShock, Civilization, and Warcraft.
+                            My two favorite movie series are Star Wars and The Lord of the Rings.
+                        </p>
+                        <p>
+                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet mattis pharetra. Suspendisse ultricies quam non turpis iaculis, ut placerat lectus sollicitudin. Cras congue urna ipsum, a tincidunt purus dapibus tincidunt. Nam posuere tincidunt viverra. Suspendisse vitae tellus nec leo porta suscipit vel at risus. Aenean dapibus nulla vel euismod semper. Curabitur vulputate ullamcorper lectus et sagittis. Aliquam feugiat tempus erat. Vivamus sed ultricies ex. Etiam laoreet sed nisi sed finibus. Etiam consequat aliquet nisi ut volutpat.
+                             Vivamus vitae elit ornare, tristique neque in, maximus lorem. Pellentesque dui lectus, molestie id leo id, mattis commodo felis. Nam dapibus ac libero eget tincidunt. Proin mollis tempus sem, vel sodales nunc pellentesque a. Sed varius enim ligula, a vulputate mauris mollis a. Aenean eros odio, tincidunt ac congue eu, sollicitudin vitae tellus. Integer ut gravida metus, in porta nisi. Vivamus imperdiet, metus quis elementum venenatis, purus nisl finibus orci, in posuere libero lacus vitae ligula. Phasellus tincidunt eget nisi vel pharetra. In malesuada sed mi at tempor.
+                        </p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="http://webiconspng.com/wp-content/uploads/2017/09/Darth-Vader-PNG-Image-38485.png" class="img-fluid" alt="Darth Vader">
+                    </div>
+                </div>
+            </header>
             <br>
-        <main>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>Portfolio</h3>
+            <div id="projects" class="row">
+                <div class="col-lg-4 card card-body bg-light">
+                    <h3>Project 1</h3>
                     <div>
-                        <div id="carousel" class="carousel slide" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                                <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#carousel" data-slide-to="1"></li>
-                                <li data-target="#carousel" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <img src="img/proj_template.png" width="300px" height="250px">
-                                    <div class="carousel-caption">
-                                        <h3>Cool Project #1</h3>
-                                        <p>(This is a template)</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="img/proj_template.png" width="300px" height="250px">
-                                    <div class="carousel-caption">
-                                        <h3>Cool Project #2</h3>
-                                        <p>(This is a template)</p>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <img  src="img/proj_template.png" width="300px" height="250px">
-                                    <div class="carousel-caption">
-                                        <h3>Cool Project #3</h3>
-                                        <p>(This is a template)</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <img class="img-fluid" src="http://hortlaxcobra.com/wp-content/uploads/2016/11/demo-placeholder-3-min-960x780.png" alt="Image 1">
+                    </div>
+                    <p>
+                        (Template)
+                    </p>
+                </div>
+                <div class="col-lg-4 card card-body bg-light">
+                        <h3>Project 2</h3>
+                        <div>
+                            <img class="img-fluid" src="http://hortlaxcobra.com/wp-content/uploads/2016/11/demo-placeholder-3-min-960x780.png" alt="Image 1">
                         </div>
+                        <p>
+                            (Template)
+                        </p>
+                </div>
+                <div class="col-lg-4 card card-body bg-light">
+                        <h3>Project 3</h3>
+                        <div>
+                            <img class="img-fluid" src="http://hortlaxcobra.com/wp-content/uploads/2016/11/demo-placeholder-3-min-960x780.png" alt="Image 1">
+                        </div>
+                        <p>
+                            (Template)
+                        </p>
+                </div>
+            </div>
+            <br>
+            <div id="follow-me" class="row">
+                <div class="col-lg-12 text-center card card-body bg-light">
+                    <h3>Follow Me</h3>
+                    <br>
+                    <div>
+                        <a class="link-btn" href="#!">GitHub</a>
+                        <a class="link-btn" href="#!">GitLab</a>
+                        <a class="link-btn" href="#!">LinkedIn</a>
                     </div>
                 </div>
             </div>
-                <br>
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>Follow Me</h3>
-                    <button class="btn follow-me-btn" data-link="https://github.com/davidrosenblum2">GitHub</button>
-                    <button class="btn follow-me-btn" data-link="/fake">Twitter</button>
-                    <button class="btn follow-me-btn" data-link="/fake">LinkedIn</button>
-                </div>
-            </div>
+            <br>
+            <footer class="container-fluid text-center">
+                <hr>
+                David Rosenblum | 2018
+            </footer>
         </main>
-        <footer class="text-center">
-            <hr>
-            David Rosenblum | 2018
-        </footer>
     </div>
-    <script src="/lib/js/jquery-3.2.1.slim.min.js"></script>
-    <script src="/lib/js/bootstrap.min.js"></script>
-    <script>
-        // when the doc loads...
-        window.addEventListener("load", evt => {
-            // grab each btn with a data-link attr and make it the onclick location 
-            document.querySelectorAll("button[data-link]").forEach(btn => {
-                btn.addEventListener("click", evt => {
-                    window.location = btn.getAttribute("data-link");
-                });
-            });
-
-            // carousel
-          $("#carousel").carousel();
-        })
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
