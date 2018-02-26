@@ -18,10 +18,19 @@ app.route("/fake*").get((req, res) => {
 });
 
 app.route("/quote/get*").get((req, res) => {
-    res.writeHead(200);
+    res.writeHead(200, {
+        "Access-Control-Allow-Origin": "*"
+    });
 
-    let index = Math.round(Math.random() * (quotes.length-1));
+    let index = Math.round(Math.random() * (quotes.length - 1));
     res.end(JSON.stringify(quotes[index], null, 4));
+});
+
+app.route("/quote/get*").options((req, res) => {
+    res.writeHead(200, {
+        "Access-Control-Allow-Origin": "*"
+    });
+    res.end();
 });
 
 let quotes  = [];

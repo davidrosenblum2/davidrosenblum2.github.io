@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+
+body{
+    background: linear-gradient(0deg, black, rgb(3, 174, 231)) fixed 100% 100%;
+    font-family: 'Advent Pro';
+    font-size: 1.2rem;
+}
+
+main{
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 6px;
+    background-color: white;
+    padding: 5px;
+    width: 80%;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 1px 1px black;
+}
+
+header h1{
+    text-shadow: 1px 2px royalblue;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+#quote-area{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.action-btn{
+    background-color: white;
+    color: royalblue;
+    border: 1px solid royalblue;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+    width: 115px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.action-btn:hover{
+    background-color: royalblue;
+    color: white;
+    border-color: white;
+}
+
+::selection{
+    background-color: black;
+    color: royalblue;
+}
