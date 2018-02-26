@@ -36,7 +36,7 @@
 
     var nextQuote = function(evt){
         ajax(
-            "http://" + window.location.host  + "/quote/get", 
+            window.location.protocol + "//" + window.location.host  + "/quote/get", 
             AJAX_OPTS, 
             function(res, status){
                 if(status === 200){
