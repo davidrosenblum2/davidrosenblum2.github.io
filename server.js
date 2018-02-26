@@ -4,7 +4,8 @@
 
 "use strict";
 
-let express = require("express");
+let express = require("express"),
+    fs = require("fs");
 
 let app = express().use(express.static(__dirname + "/public"));
 
@@ -14,6 +15,25 @@ app.route("/").get((req, res) => {
 
 app.route("/fake*").get((req, res) => {
     res.end("This link is fake.");
+});
+
+app.route("/quote/get*").get((req, res) => {
+    res.writeHead(200);
+
+    let index = Math.round(Math.random() * (quotes.length-1));
+    res.end(JSON.stringify(quotes[index], null, 4));
+});
+
+let quotes  = [];
+fs.readFile("misc/quotes.json", (err, data) => {
+    if(!err){
+        try{
+          quotes = JSON.parse(data);
+        }
+        catch(err){
+            return;
+        }
+    }
 });
 
 // heroku gives port
