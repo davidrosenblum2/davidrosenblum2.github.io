@@ -31,7 +31,9 @@
     };
 
     var tweetQuote = function(evt){
-        window.open("http://twitter.com/intent/tweet?text=" + encodeURIComponent(currQuote));
+        if(currQuote){
+            window.open("http://twitter.com/intent/tweet?text=" + encodeURIComponent(currQuote));
+        }
     };
 
     var nextQuote = function(evt){
@@ -63,8 +65,16 @@
     };
 
     var display = function(quote, source){
-        quoteArea.innerHTML = '"'+ quote + '"';
-        sourceElement.innerHTML = " - " + source;
+        if(quote){
+            quoteArea.innerHTML = '"'+ quote + '"';
+
+            if(source){
+                sourceElement.innerHTML = " - " + source;
+            }
+        }
+        else{
+            quoteArea.innerHTML = "Bad JSON response.";
+        }
     };
 
     var init = function(){
