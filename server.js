@@ -28,7 +28,8 @@ app.route("/quote/get*").get((req, res) => {
 
 app.route("/quote/get*").options((req, res) => {
     res.writeHead(200, {
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*"
     });
     res.end();
 });
